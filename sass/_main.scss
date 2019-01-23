@@ -1,0 +1,81 @@
+.main {
+    background-image: url('../images/Bg_img_01.png ');
+    height: 80vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 60px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+
+        span {
+            color: $activeColor;
+        }
+    }
+
+    p {
+        font-size: 22px;
+        font-weight: 400;
+        color: #ffffff;
+        text-align: center;
+        margin-top: 12px;
+    }
+
+    .btn-get {
+        text-align: center;
+        button {
+            background-color: $activeColor;
+            border: none;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 20px;
+            padding: 13px 49px;
+            color: #ffffff;
+            border-radius: 20px;
+            outline: none;
+
+            &:hover {
+                cursor: pointer;
+                opacity: 0.6;
+            }
+
+        }
+    }
+
+    .dots {
+        text-align: center;
+        margin-top: 100px;
+
+        .single-dot {
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            margin: 0 7px;
+            border-radius: 50%;
+            border: 2px solid $activeColor;
+
+            &:hover {
+                background-color: $activeColor;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .phone {
+        position: fixed;
+        top: 80vh;
+        right: 60px;
+       
+        &:hover {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+}

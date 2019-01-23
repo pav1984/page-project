@@ -1,0 +1,55 @@
+.about-us {
+    padding-top: 45px;
+    background-color: #f7f7f7;
+    .container {
+        width: 73%;
+        .text-about {
+            text-align: center;
+            text-transform: uppercase;
+            h1 {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0;
+            }
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #aeaeae;
+                margin-top: 13px;
+            }
+        }
+        .about-content {
+            display: flex;
+            margin-top: 45px;
+            .text-content {
+                margin-top: 8px;
+                p {
+                    font-size: 14px;
+                    font-weight: 300;
+                    line-height: 25px;
+                    color: #242424;
+                }
+                button {
+                    color: #ffffff;
+                    text-transform: uppercase;
+                    outline: none;
+                    border: none;
+                    font-size: 11px;
+                    font-weight: 700;
+                    line-height: 18px;
+                    padding: 13px 49px;
+                    background-color: $activeColor;
+                    border-radius: 20px;
+                    margin-top: 30px;
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.6;
+                    }
+                }
+            }
+            .video-img {
+             margin-bottom: 80px;
+            }
+        }
+    }
+}

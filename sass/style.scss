@@ -1,0 +1,18 @@
+@import "variables";
+@import "normalize";
+@import "layout";
+@import "top-menu";
+@import "main";
+@import "about-us";
+@import "service";
+@import "our-projects";
+@import "gallery";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family:$mainFont;
+}
