@@ -1,0 +1,129 @@
+.our-team {
+    padding-top: 45px;
+    background-image: url('../images/Bg_our-team.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .container {
+        text-align: center;
+        width: 90%;
+
+        .text-our-team {
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+
+            h1 {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #aeaeae;
+                margin-top: 13px;
+            }
+
+        }
+
+        .img-wrapper {
+            width: 320px;
+            height: 422px;
+            background-color: #ffffff;
+            margin: 15px;
+            border-radius: 3px;
+
+            @include sm {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .our-team-icons {
+                display: flex;
+                justify-content: center;
+                padding-top: 30px;
+
+                a {
+                    text-decoration: none;
+                    margin: 3px;
+                }
+
+                .fab {
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 50%;
+                    background-color: #bebebe;
+                    line-height: 2;
+                    color: #ffffff;
+
+                    &:hover {
+                        background-color: $activeColor;
+                    }
+                }
+
+                .fab-dots {
+                    font-size: 30px;
+                    line-height: 0.6;
+                    font-weight: bold;
+                }
+            }
+
+            img {
+                padding: 38px 0;
+            }
+
+            h2 {
+                font-size: 21px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 2;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
+        .dots {
+            text-align: center;
+            margin-top: 50px;
+            padding-bottom: 20px;
+
+            @include sm {
+                margin: 0;
+            }
+
+            .single-dot {
+                display: inline-block;
+                height: 13px;
+                width: 13px;
+                margin: 0 7px;
+                border-radius: 50%;
+                border: 2px solid $activeColor;
+
+                &:hover {
+                    background-color: $activeColor;
+                    cursor: pointer;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1172px) {
+    .our-team {
+        .container {
+            width: 100%;
+
+            .col-4 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

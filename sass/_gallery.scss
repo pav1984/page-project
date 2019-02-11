@@ -61,9 +61,11 @@
         }
 
     }
+
     .btn-gallery {
         text-align: center;
         padding-bottom: 46px;
+
         button {
             color: #ffffff;
             text-transform: uppercase;
@@ -76,7 +78,7 @@
             background-color: $activeColor;
             border-radius: 20px;
             margin-top: 30px;
-          
+
             &:hover {
                 opacity: 0.6;
                 cursor: pointer;

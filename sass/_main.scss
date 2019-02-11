@@ -1,10 +1,19 @@
 .main {
     background-image: url('../images/Bg_img_01.png ');
-    height: 80vh;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: top;
+    padding: 100px 0 45px 0;
+
+    @include sm {
+        padding: 45px 0 45px 0;
+    }
+
+    .main-wrapper {
+        height: 440px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     h1 {
         text-align: center;
@@ -13,6 +22,11 @@
         font-weight: 700;
         text-transform: uppercase;
         margin: 0;
+
+        @include md {
+            font-size: 50px;
+        }
+
 
         span {
             color: $activeColor;
@@ -29,6 +43,7 @@
 
     .btn-get {
         text-align: center;
+
         button {
             background-color: $activeColor;
             border: none;
@@ -69,13 +84,45 @@
     }
 
     .phone {
-        position: fixed;
-        top: 80vh;
-        right: 60px;
-       
+        position: absolute;
+        right: 5vw;
+        z-index: 1;
+
         &:hover {
             opacity: 0.5;
             cursor: pointer;
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .main {
+        h1 {
+            font-size: 45px;
+        }
+    }
+}
+
+@media(max-width:440px) {
+    .main {
+        h1 {
+            font-size: 40px;
+        }
+    }
+}
+
+@media(max-width:385px) {
+    .main {
+        h1 {
+            font-size: 35px;
+        }
+    }
+}
+
+@media(max-width:340px) {
+    .main {
+        h1 {
+            font-size: 30px;
         }
     }
 }

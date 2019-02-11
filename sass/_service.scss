@@ -4,6 +4,7 @@
 
     .container {
         width: 80%;
+
         .text-service {
             text-align: center;
             text-transform: uppercase;
@@ -24,16 +25,33 @@
 
             }
         }
+
         .service-icons {
             display: flex;
             justify-content: center;
             text-align: center;
+
+            @include lg {
+                flex-wrap: wrap;
+            }
+
             .single-service {
                 padding: 0 7px;
                 border-left: 2px solid #393939;
+
+                @include lg {
+                    border-left: none;
+                    padding: 15px;
+                }
+
                 &:last-child {
                     border-right: 2px solid #393939;
+
+                    @include lg {
+                        border-right: none;
+                    }
                 }
+
                 h2 {
                     color: #ffffff;
                     text-transform: uppercase;
@@ -41,12 +59,14 @@
                     font-size: 18px;
                     line-height: 24px;
                 }
+
                 p {
                     color: #7e7e7e;
                     font-weight: 300;
                     font-size: 12px;
                     line-height: 24px;
                 }
+
                 img {
                     margin-bottom: 30px;
                     width: 59px;
@@ -54,5 +74,9 @@
                 }
             }
         }
+    }
+
+    .rwd-service {
+        padding-top: 24px;
     }
 }

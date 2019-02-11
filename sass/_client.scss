@@ -1,0 +1,83 @@
+.clients {
+    padding-top: 45px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #cfcfcf;
+
+    .container {
+        .text-clients {
+            text-align: center;
+            text-transform: uppercase;
+
+            h1 {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #aeaeae;
+                margin-top: 13px;
+            }
+        }
+
+        .img-client {
+            text-align: center;
+
+            h2 {
+                padding-top: 20px;
+                line-height: 2;
+                font-size: 24px;
+                font-weight: 700;
+            }
+
+            p {
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                padding-top: 70px;
+            }
+
+            .quotes {
+                padding: 20px 0;
+            }
+
+            .client-text-content {
+                color: #7e7e7e;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 25px;
+                padding: 0 20%;
+
+                @include sm {
+                    padding: 0 4%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .dots {
+        text-align: center;
+        padding: 45px;
+
+        .single-dot {
+            display: inline-block;
+            height: 13px;
+            width: 13px;
+            margin: 0 7px;
+            border-radius: 50%;
+            border: 2px solid $activeColor;
+
+            &:hover {
+                background-color: $activeColor;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,0 +1,141 @@
+.footer-conteiner {
+    text-align: center;
+    background-color: #000000;
+    position: relative;
+    padding: 30px 0 25px 0;
+
+    @include lg {
+        padding-bottom: 50px;
+    }
+
+    .container {
+        .row {
+            width: 92%;
+            margin: 0 auto;
+
+            @include lg {
+                width: 100%;
+                padding-top: 50px;
+            }
+
+            .t-left {
+                text-align: left;
+                padding-left: 0;
+
+                @include lg {
+                    text-align: center;
+                }
+
+                @include sm {
+                    padding: 0;
+                }
+            }
+
+            .footer-icons {
+                a {
+                    text-decoration: none;
+                    margin: 2px;
+
+                    @include sm {
+                        margin: 1px;
+                    }
+                }
+
+                .fab {
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 50%;
+                    background-color: #373737;
+                    line-height: 2;
+                    color: #ffffff;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: $activeColor;
+                    }
+                }
+            }
+
+            .copyright {
+                color: #ffffff;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 400;
+                margin-top: 140px;
+
+                @include lg {
+                    display: none;
+                }
+            }
+
+            .center-text {
+                color: #7e7e7e;
+                font-size: 12px;
+                line-height: 21px;
+                font-weight: 300;
+                text-align: left;
+
+                @include lg {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+
+            .footer-form {
+                height: 198px;
+                background-color: #373737;
+
+                @include lg {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+                input[type=text] {
+                    background-color: inherit;
+                    border: none;
+                    color: #9e9e9e;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    line-height: 40px;
+                    font-weight: 300;
+                    padding: 33px 15px 0 15px;
+                    outline: none;
+                    text-align: center;
+                    border-bottom: 2px solid #aeaeae;
+                }
+
+                input[type=submit] {
+                    background-color: $activeColor;
+                    border: none;
+                    font-size: 11px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    padding: 13px 65px;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    outline: none;
+                    margin: 50px 0 70px 0;
+
+                    &:hover {
+                        cursor: pointer;
+                        opacity: 0.6;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright-sm {
+        display: none;
+
+        @include lg {
+            text-align: center;
+            display: block;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 50px;
+        }
+    }
+}

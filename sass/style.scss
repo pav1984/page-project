@@ -7,7 +7,15 @@
 @import "service";
 @import "our-projects";
 @import "gallery";
-
+@import 'our-team';
+@import'client';
+@import 'company';
+@import 'price';
+@import 'premium';
+@import 'some-facts';
+@import 'contact-us';
+@import 'map';
+@import 'footer';
 * {
     margin: 0;
     padding: 0;
@@ -15,4 +23,5 @@
 }
 body {
     font-family:$mainFont;
+    overflow-x: hidden;
 }

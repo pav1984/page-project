@@ -1,0 +1,111 @@
+.contact-us {
+    border-top: 1px solid #ededed;
+    background-color: #f7f7f7;
+    padding-bottom: 70px;
+
+    .container {
+        .text-contact {
+            text-align: center;
+            text-transform: uppercase;
+            padding: 45px 0 70px 0;
+
+            h1 {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #aeaeae;
+                margin-top: 13px;
+            }
+        }
+
+        .contact-wrapper {
+            text-align: center;
+
+            input {
+                border: none;
+                background-color: inherit;
+                border-bottom: 2px solid #aeaeae;
+                font-size: 13px;
+                font-weight: 300;
+                color: #000000;
+                line-height: 35px;
+                text-transform: uppercase;
+                outline: none;
+            }
+
+            .id-container {
+                input[type=text] {
+                    padding-right: 124px;
+                    margin: 0px 5px;
+
+                    @include md {
+                        display: block;
+                        padding-right: 60%;
+                        margin: 0 auto;
+                    }
+
+                    @include sm {
+                        padding-right: 45%;
+                    }
+                }
+            }
+
+            .subject-container {
+                input[type=text] {
+                    padding: 45px 408px 0 0;
+
+                    @include md {
+                        display: block;
+                        padding-right: 60%;
+                        margin: 0 auto;
+                    }
+
+                    @include sm {
+                        padding-right: 45%;
+                    }
+                }
+            }
+
+            .massage-container {
+                input[type=text] {
+                    padding: 80px 408px 0 0;
+
+                    @include md {
+                        display: block;
+                        padding-right: 60%;
+                        margin: 0 auto;
+                    }
+
+                    @include sm {
+                        padding-right: 45%;
+                    }
+                }
+            }
+        }
+
+        .btn-contac-us {
+            input[type=submit] {
+                background-color: $activeColor;
+                border: none;
+                font-size: 11px;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 2px 45px;
+                color: #ffffff;
+                border-radius: 20px;
+                outline: none;
+                margin-top: 28px;
+
+                &:hover {
+                    cursor: pointer;
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}

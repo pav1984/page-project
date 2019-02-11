@@ -1,0 +1,111 @@
+.price {
+    padding-top: 45px;
+    background-color: #ededed;
+    border-bottom: 1px solid #cfcfcf;
+
+    .container {
+        width: 90%;
+
+        .text-price {
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 40px;
+
+            h1 {
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: #aeaeae;
+                margin-top: 13px;
+            }
+        }
+
+        .price-wrapper {
+            width: 250px;
+            height: 343px;
+            background-color: #ffffff;
+            text-align: center;
+            border-radius: 3px;
+
+            @include lg {
+                width: 70%;
+            }
+
+            @include md {
+                width: 80%;
+            }
+
+            h2 {
+                padding: 28px 0 15px 0;
+                text-transform: uppercase;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+
+        .dollar-content {
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 4.8px;
+            line-height: 21px;
+            color: #242424;
+            padding-bottom: 4px;
+        }
+
+        .text-gray {
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            line-height: 25px;
+            color: #aeaeae;
+            font-weight: 400;
+            padding-bottom: 23px;
+        }
+
+        .price-info {
+            color: #7e7e7e;
+            line-height: 13px;
+            font-size: 10px;
+            font-weight: 400;
+            padding-bottom: 20px;
+        }
+
+        .btn-price {
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 18px;
+            background-color: #373737;
+            border: none;
+            border-radius: 20px;
+            outline: none;
+            padding: 14px 41px;
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: $activeColor;
+                cursor: pointer;
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1160px) {
+    .price {
+        .container {
+            width: 100%;
+
+            .col-3 {
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+    }
+}

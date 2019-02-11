@@ -1,0 +1,23 @@
+.our-team {
+  padding: 45px;
+}
+
+.our-team .container .text-our-team {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.our-team .container .text-our-team h1 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.our-team .container .text-our-team p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #aeaeae;
+  margin-top: 13px;
+}
+
+/*# sourceMappingURL=our-team.css.map */

@@ -4,7 +4,7 @@
 
     .container {
 
-        // width: 70%;
+
         .text-projects {
             text-align: center;
             text-transform: uppercase;
@@ -32,6 +32,11 @@
             border: 1px solid #cfcfcf;
             border-radius: 20px;
 
+            @include md {
+                display: block;
+                width: 250px;
+            }
+
             li {
                 list-style: none;
                 font-size: 13px;
@@ -43,13 +48,26 @@
                 position: relative;
                 border-right: 1px solid #cfcfcf;
 
+                @include md {
+                    border-right: none;
+                    padding: 0;
+                }
+
                 &:last-child {
                     border: none;
                     padding: 0 43px;
+
+                    @include md {
+                        padding: 0 13px;
+                    }
                 }
 
                 &:first-child {
                     padding: 0 43px;
+
+                    @include md {
+                        padding: 0;
+                    }
                 }
 
                 &:after {
@@ -58,9 +76,11 @@
                     display: block;
                     visibility: hidden;
                 }
+
                 &:hover:after {
                     visibility: visible;
                 }
+
                 a {
                     text-decoration: none;
                     color: #000000;

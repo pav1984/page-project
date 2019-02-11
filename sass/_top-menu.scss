@@ -2,6 +2,7 @@ header {
     height: 100px;
     background-color: #000000;
     width: 100%;
+
     @include xl {
         height: auto;
     }
@@ -11,12 +12,15 @@ header {
         justify-content: center;
         height: 100px;
         align-items: center;
+
         @include xl {
             height: auto;
             display: block;
         }
+
         .navbar-logo {
             margin-right: 70px;
+
             @include xl {
                 margin: 10px auto;
                 display: block;
@@ -24,12 +28,15 @@ header {
             }
         }
     }
+
     .navbar-list {
         display: flex;
         white-space: nowrap;
+
         @include xl {
             display: none;
         }
+
         &.navbar-hidden {
             @include xl {
                 display: block;
@@ -39,13 +46,15 @@ header {
             }
         }
     }
+
     li {
         list-style: none;
         margin: 0 13px;
+
         @include xl {
             margin: 17px 0;
         }
-       
+
     }
 
     a {
@@ -55,32 +64,35 @@ header {
         font-size: 12px;
         text-transform: uppercase;
         padding-bottom: 37px;
-         &:hover {
-             border-bottom: 5px solid $activeColor;
-         }
-         @include xl {
-             padding: 0;
-             font-size: 15px;
-         }
+
+        &:hover {
+            border-bottom: 5px solid $activeColor;
+        }
+
+        @include xl {
+            padding: 0;
+            font-size: 15px;
+        }
 
     }
 }
+
 .hamburger-btn {
     display: none;
     color: #ffffff;
     background-color: #000000;
     font-size: 45px;
     border: none;
+
     @include xl {
         display: block;
         border: none;
         margin: 15px auto;
         outline: none;
+
         &:hover {
             cursor: pointer;
             color: $activeColor;
         }
     }
 }
-
-

@@ -1,0 +1,84 @@
+.map-section {
+    position: relative;
+    background-color: #f7f7f7;
+
+    .container {
+        .map-wrapper {
+            .map-img {
+                height: 350px;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+
+                @include lg {
+                    object-position: right;
+                }
+
+                @include sm {
+                    height: 136px;
+                }
+            }
+        }
+
+        .info-map {
+            width: 500px;
+            height: 280px;
+            background-color: #ffffff;
+            position: absolute;
+            top: 36px;
+            left: 127px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+
+            @include lg {
+                position: static;
+                margin: 20px auto;
+                border-radius: 10px;
+                padding: 20px 0;
+            }
+
+            a {
+                text-decoration: none;
+                color: #7e7e7e;
+                line-height: 24px;
+                font-size: 12px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                padding: 6px 0 6px 30px;
+
+                @include sm {
+                    padding-left: 2px;
+                }
+
+                &:hover {
+                    background-color: $activeColor;
+                    color: #ffffff;
+                }
+
+                span {
+                    width: 35px;
+                    height: 35px;
+                    background: #bebebe;
+                    text-align: center;
+                    line-height: 45px;
+                    border-radius: 50%;
+                }
+            }
+
+            img {
+                color: #ffffff;
+            }
+
+            p {
+                padding-left: 14px;
+
+                @include sm {
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+}
