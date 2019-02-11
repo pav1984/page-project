@@ -76,9 +76,16 @@
 
             .video-img {
                 margin-bottom: 80px;
-
+                max-width:486px;
+                 
                 @include lg {
                     margin: 0;
+                }
+                .img-about-us {
+                    @include sm {
+                        width: 100%;
+                        height: auto;
+                    }
                 }
             }
         }
