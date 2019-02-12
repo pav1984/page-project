@@ -726,6 +726,10 @@ header .navbar .navbar-logo {
   }
 }
 
+header .navbar .navbar-logo .header-logo:hover {
+  opacity: 0.5;
+}
+
 header .navbar-list {
   display: flex;
   white-space: nowrap;
@@ -757,7 +761,7 @@ header li {
   }
 }
 
-header a {
+header li a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
@@ -766,12 +770,12 @@ header a {
   padding-bottom: 37px;
 }
 
-header a:hover {
+header li a:hover {
   border-bottom: 5px solid #b88b58;
 }
 
 @media (max-width: 1200px) {
-  header a {
+  header li a {
     padding: 0;
     font-size: 15px;
   }
@@ -2145,7 +2149,7 @@ header a:hover {
 
 @media (max-width: 576px) {
   .map-section .container .info-map {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -2163,6 +2167,7 @@ header a:hover {
 @media (max-width: 576px) {
   .map-section .container .info-map a {
     padding-left: 5px;
+    font-size: 10px;
   }
 }
 

@@ -26,6 +26,11 @@ header {
                 display: block;
                 text-align: center;
             }
+           .header-logo {
+               &:hover {
+                   opacity: 0.5;
+               }
+           }
         }
     }
 
@@ -55,25 +60,24 @@ header {
             margin: 17px 0;
         }
 
-    }
 
-    a {
-        text-decoration: none;
-        color: #ffffff;
-        font-weight: 700;
-        font-size: 12px;
-        text-transform: uppercase;
-        padding-bottom: 37px;
+        a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            padding-bottom: 37px;
 
-        &:hover {
-            border-bottom: 5px solid $activeColor;
+            &:hover {
+                border-bottom: 5px solid $activeColor;
+            }
+
+            @include xl {
+                padding: 0;
+                font-size: 15px;
+            }
         }
-
-        @include xl {
-            padding: 0;
-            font-size: 15px;
-        }
-
     }
 }
 

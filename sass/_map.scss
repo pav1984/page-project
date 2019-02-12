@@ -39,7 +39,7 @@
             }
 
             @include sm {
-                width: 100%;
+                width: 90%;
             }
 
             a {
@@ -54,6 +54,7 @@
 
                 @include sm {
                     padding-left: 5px;
+                    font-size: 10px;
                 }
 
                 &:hover {
